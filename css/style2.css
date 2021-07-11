@@ -1,0 +1,330 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #eeecfb;
+	font-family: "Roboto Mono";
+}
+
+nav{
+	position: absolute;
+	width: 35%;
+	right: 0;
+	display: flex;
+	padding: 2rem;
+	justify-content: space-between;
+	/*background-color: red;*/
+}
+
+/*  --  Responsiveness for navbar  --  */
+
+@media (max-width: 880px){
+
+	.line{
+		width: 20px;
+		height: 2.5px;
+		background: white;
+		margin: 5px;
+		transition: all 1s;
+	}
+
+	.hamburger{
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		right: 5%;
+		top: 3%;
+		cursor: pointer;
+		background: #673ab7;
+		align-items: center;
+		padding-left: 5px;
+		padding-top: 5.5px;
+		border-radius: 50%;
+		z-index: 4;
+	}
+
+	.pos{
+		position: fixed;
+	}
+
+	
+	/*#5b78c7*/
+
+	nav{
+		width: 100%;
+		height: 100vh;
+		font-size: 24px;
+		background: #673ab7;
+		flex-direction: column;
+		justify-content: space-around;
+		text-align: center;
+		z-index: 3;
+		clip-path: circle(50px at 98% -10%);
+		-webkit-clip-path: circle(50px at 98% -10%);
+		transition: all 0.8s ease-in-out;
+	}
+
+	nav.open{
+		position: fixed;
+		clip-path: circle(1250px at 98% -10%);
+		-webkit-clip-path: circle(1250px at 98% -10%);
+
+	}
+
+	.cross1{
+		transform: translateY(5px);
+	}
+
+	.cross2{
+		width: 15px;
+		transform: translate(5px, 5px);
+	}
+
+	.cross3{
+		/*width: 10px;
+		transform: translateX(10px);*/
+		opacity: 0;
+	}
+
+}
+
+
+
+
+
+.button{
+	text-decoration: none;
+	color: #eeecfb;
+}
+
+
+.container{
+	width: 100%;
+	padding-top: 66.66%;
+	min-height: 90vh;
+}
+
+
+.container img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	overflow: auto;
+	z-index: -1;
+	min-height: 90vh;
+}
+
+.main-title{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	font-size: 7rem;
+	transform: translate(-50%, -25% );
+}
+
+@media (max-width: 678px){
+	.main-title{
+		font-size: 6rem;
+	}
+}
+
+@media (max-width: 480px){
+	.main-title{
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 375px){
+	.main-title{
+		font-size: 4rem;
+	}
+}
+
+
+
+
+.fill
+{
+	width: 100%;
+	height: 7vw;
+	background-color: #24164f;
+	box-shadow: 
+         0px 11px 8px 0px #24164f,
+         0px -11px 8px 0px #24164f; 
+}
+
+
+
+
+/*   ---   About Section   ---   */
+
+
+
+
+.next{
+	background-color: #24164f;
+	width: 100%;
+	min-height:55vw;
+	position: relative;
+	/*padding: 20% 15%;*/
+}
+
+.hellosvg{
+	width: 30vw;
+	position: absolute;
+	left: 17%;
+	top: 11vh;
+}
+
+.contain{
+	width: 35%;
+	position: relative;
+	left: 12%;
+	top: 13vw;
+	background-color: yellow;
+	height: 37.5vw;
+	transform: scale(0.6);
+}
+
+
+.me{
+	
+	width: 35vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+.grad{
+	
+	width: 35vw;
+	position: absolute;
+	top: 14vw;
+	left: 0;
+	
+}
+
+.blob{
+	border-radius: 50%;
+    animation: blob 8s linear infinite;
+}
+
+@keyframes blob{
+    
+    0%, 100% {border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;}  
+    25% {border-radius: 52% 27% 26% 38% / 73% 36% 64% 27%;}    
+    50% {border-radius: 28% 56% 40% 60% / 49% 40% 60% 51%;}    
+    75% {border-radius: 40% 60% 55% 30% / 47% 62% 38% 53%;}
+}
+
+
+.text{
+	margin: 0;
+	width: 35%;
+	position: absolute;
+	right: 15%;
+	top: 27vw;
+	/*font-size: 20px;*/
+	transform: scale(1.2);
+	background-color: green;
+}
+
+
+
+/*  --  Responsive Design for About section  --  */
+
+@media (max-width: 1050px) {
+	.next{
+		height: 100vh;
+	}
+}
+
+@media (max-width: 770px) {
+
+	.hellosvg{
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	.text{
+		top: 55vh;
+		right: 0;
+		width: 100%;
+		padding-left: 15%;
+		padding-right: 15%;
+		text-align: center;
+		transform: scale(1);
+	}
+
+	.contain{
+		top: 25vh;
+		left: 0;
+		width: 100%;
+		transform: scale(0.8);
+		top: 23vw;
+	}
+
+	.grad, .me{
+		left: 50%;
+		transform: translate(-50%);
+	}
+	
+}
+
+
+@media (max-width: 425px) {
+  
+	.next{
+		/*background-color: red;*/
+		height: 110vh;
+		flex-direction: column;
+	}
+
+	.hello{
+		left: 20%;
+		transform: scale(0.8);
+	}
+
+	.text{
+		top: 50vh;
+		right: 0;
+		width: 100%;
+		padding-left: 15%;
+		padding-right: 15%;
+		text-align: center;
+		transform: scale(0.8);
+	}
+
+	.contain{
+		top: 25vh;
+		left:0;
+		width: 100%;
+		margin: 0;
+		transform: scale(1.2);
+	}
+
+	.grad, .me{
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+}
+
+
+
+
+/*  --  Projects section  --  */
+
+
+.project1{
+	width: 100%;
+	height: 120vh;
+	background-color: #673ab7; 
+}

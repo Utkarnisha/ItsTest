@@ -1,0 +1,55 @@
+body {
+	margin: 0;
+	font-family: "Poppins";
+	/*background-color:#231050*/
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.head1, .head2, .head3 {
+	position: absolute;
+	top: 0
+	left: 0;
+	width: 100%;
+	object-fit: cover;
+}
+
+.head1, .head2 {
+	z-index: -1;
+}
+
+.heading {
+	position: absolute;
+	text-align: center;
+}
+
+h1{
+	font-family: "Dancing Script";
+	font-weight: bolder;
+	font-size: 6rem;
+}
+
+/*  --  Gradient --  */
+
+.fill{
+	width: 100%;
+}
+
+.fill-div {
+	width: 100%;
+	background-color:#231050;
+	height: 2500px;
+}
+
+.fill, .fill-div, .head3 {
+	margin:0;
+}
+
