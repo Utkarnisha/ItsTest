@@ -187,7 +187,7 @@ nav{
 	position: relative;
 	left: 12%;
 	top: 13vw;
-	background-color: yellow;
+/* 	background-color: yellow; */
 	height: 37.5vw;
 	transform: scale(0.6);
 }
@@ -233,7 +233,7 @@ nav{
 	top: 27vw;
 	/*font-size: 20px;*/
 	transform: scale(1.2);
-	background-color: green;
+/* 	background-color: green; */
 }
 
 
